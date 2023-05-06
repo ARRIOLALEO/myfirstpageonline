@@ -1,10 +1,10 @@
 body{
     display: grid;
     grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:100vh 25vh 25vh ;
+    grid-template-rows:100vh 35vh 25vh ;
     grid-template-areas: "header header header"
     "main main main"
-    "footer footer footer";
+    "footer1 footer2 footer3";
 }
 
 header{
@@ -17,10 +17,21 @@ header{
     background-image: url('https://www.thingstodovalencia.com/wp-content/uploads/2018/09/paseo-playa-malvarrosa-cabanyal-valencia-1.jpg');
     background-size: cover;
 }
+
 main{
     background-color: blue;
     grid-area: main;
 }
+article{
+    font-size: large;
+    padding: 15px;
+}
+.dark-color{
+    background-color: #926239;
+    color: white;
+    text-align: center;
+}
+
 button{
     border: 1px green solid;
     background-color: grey;
@@ -36,7 +47,14 @@ button:hover{
     cursor: pointer ;
 }
 
-footer{
-    background-color: orange;
-    grid-area: footer;
+footer-left{
+    grid-area: footer1;
+}
+
+footer-center{
+    grid-area: footer2;
+}
+
+footer-right{
+    grid-area: footer3;
 }
